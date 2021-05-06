@@ -23,20 +23,29 @@ h2 {
   text-align: center;
 }
 
-/*  Grid 1  */
+/* =================
+        Grid 1
+  ================== */
 
 .grid-container-1 {
-  width: 602px;
+  /* width: 602px; */
+  border: 1px solid white;
   margin: 0 auto;
   display: grid;
   grid-template: repeat(3, 200px) / repeat(3, 200px);
+  /* Grid auto rows and columns will explicitly define the size of any grid item that is automatically placed
+     onto the grid container by the browser. In this example, grid item 10, 11, and 12 are automatically placed
+     into the grid and the size of their width and height are determined by the grid-auto property. */
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
 }
 
 .grid-item {
-  background: plum;
+  background: hsl(10deg 63% 64%);
+  border: 1px solid hsl(10deg 0% 64%);
+  font-size: 2em;
   color: white;
   padding: 1em;
-  border: 2px solid purple;
   display: flex;
   align-items: center;
   justify-content: center;
