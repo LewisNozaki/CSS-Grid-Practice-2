@@ -13,13 +13,14 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: plum;
   background-image: linear-gradient(to bottom right, cornflowerblue, aquamarine);
   color: white;
   font-family: sans-serif;
 }
 
-h2 {
+.title {
+  border: 1px solid transparent;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -28,7 +29,7 @@ h2 {
   ================== */
 
 .grid-container-1 {
-  /* width: 602px; */
+  width: 602px;
   border: 1px solid white;
   margin: 0 auto;
   display: grid;
