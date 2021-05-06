@@ -1,0 +1,43 @@
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: plum;
+  background-image: linear-gradient(to bottom right, cornflowerblue, aquamarine);
+  color: white;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*  Grid 1  */
+
+.grid-container-1 {
+  width: 602px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(3, 200px) / repeat(3, 200px);
+}
+
+.grid-item {
+  background: plum;
+  color: white;
+  padding: 1em;
+  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
