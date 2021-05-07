@@ -74,18 +74,36 @@ a:hover {
     height: 70%;
     border: 1px solid white;
     display: grid;
+    /* Grid Template Areas */
     grid-template-areas: 
       "header header header"
-      "sidebar content content";
+      "sidebar content content"
+      "footer footer footer";
   }
 
   .grid-item2 {
     background: black;
     font-size: 2em;
     color: white;
-    padding: 1em 2em;
+    padding: 1em;
     border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .big {
+    grid-area: content;
+  }
+
+  .footer {
+    grid-area: footer;
   }
