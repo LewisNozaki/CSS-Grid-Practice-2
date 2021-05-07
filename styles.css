@@ -120,3 +120,20 @@ a:hover {
   .something {
     grid-area: something;
   }
+
+  /* =================
+        Grid 2
+  ================== */
+
+  .grid-container-3 {
+    border: 1px solid white;
+    display: grid;
+    /* Grid Template Areas */
+    /* The height of the rows will fit the content of the element */
+    /* Placing a "." inside the template area will define that section to be a blank space */
+    grid-template-areas: 
+      "header header header"
+      "sidebar content content"
+      "footer footer footer"
+      ". something .";
+  }
