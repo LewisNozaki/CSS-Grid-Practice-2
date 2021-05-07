@@ -75,10 +75,13 @@ a:hover {
     border: 1px solid white;
     display: grid;
     /* Grid Template Areas */
+    /* The height of the rows will fit the content of the element */
+    /* Placing a "." inside the template area will define that section to be a blank space */
     grid-template-areas: 
       "header header header"
       "sidebar content content"
-      "footer footer footer";
+      "footer footer footer"
+      ". something .";
   }
 
   .grid-item2 {
@@ -106,4 +109,14 @@ a:hover {
 
   .footer {
     grid-area: footer;
+  }
+
+  /* Any grid item that is not explicitly given a grid area will be placed in a new implicity row on the bottom */
+
+  .LO {
+    background: lightpink;
+  }
+
+  .something {
+    grid-area: something;
   }
