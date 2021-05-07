@@ -63,3 +63,29 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
+/* =================
+        Grid 2
+  ================== */
+
+  .grid-container-2 {
+    margin: 0 auto;
+    width: 50%;
+    height: 70%;
+    border: 1px solid white;
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "sidebar content content";
+  }
+
+  .grid-item2 {
+    background: black;
+    font-size: 2em;
+    color: white;
+    padding: 1em 2em;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
