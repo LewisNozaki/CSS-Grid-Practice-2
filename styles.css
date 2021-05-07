@@ -126,6 +126,8 @@ a:hover {
   ================== */
 
   .grid-container-3 {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 5em auto 5em;
     grid-template-areas: 
@@ -134,7 +136,7 @@ a:hover {
       "...... sidebar ......"
       "footer footer footer";
   }
-  
+
   .grid-item3 {
     background: aquamarine;
     font-size: 2em;
