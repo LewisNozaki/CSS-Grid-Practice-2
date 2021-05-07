@@ -126,14 +126,38 @@ a:hover {
   ================== */
 
   .grid-container-3 {
-    border: 1px solid white;
     display: grid;
-    /* Grid Template Areas */
-    /* The height of the rows will fit the content of the element */
-    /* Placing a "." inside the template area will define that section to be a blank space */
+    grid-template-columns: 5em auto 5em;
     grid-template-areas: 
       "header header header"
-      "sidebar content content"
-      "footer footer footer"
-      ". something .";
+      "...... content ......"
+      "...... sidebar ......"
+      "footer footer footer";
+  }
+  
+  .grid-item3 {
+    background: aquamarine;
+    font-size: 2em;
+    color: #444;
+    padding: 1em;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .H {
+    grid-area: header;
+  }
+
+  .S {
+    grid-area: sidebar;
+  }
+
+  .C {
+    grid-area: content;
+  }
+
+  .F {
+    grid-area: footer;
   }
