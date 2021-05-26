@@ -126,8 +126,8 @@ a:hover {
   ================== */
 
   .grid-container-3 {
-    width: 90%;
-    margin: 0 auto;
+    /* width: 90%; */
+    /* margin: 0 auto; */
     display: grid;
     grid-template-columns: 5em auto 5em;
     grid-template-areas: 
@@ -146,6 +146,18 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* 600px or more */
+  @media only screen and (min-width: 1200px) {
+    .grid-container-3 {
+      grid-template-columns: 15% 40% 30% 15%;
+      grid-template-areas: 
+        "header header header header"
+        "..... content sidebar ....."
+        "footer footer footer footer"
+      ;
+    }
   }
 
   .H {
