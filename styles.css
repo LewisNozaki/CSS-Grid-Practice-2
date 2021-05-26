@@ -34,6 +34,7 @@ a:hover {
   border: 1px solid transparent;
   padding: 2em 0;
   text-align: center;
+  border: 1px solid white;
 }
 
 /* =================
@@ -135,6 +136,7 @@ a:hover {
       "...... content ......"
       "...... sidebar ......"
       "footer footer footer";
+    height: calc(100% - 191px);
   }
 
   .grid-item3 {
@@ -152,6 +154,7 @@ a:hover {
   @media only screen and (min-width: 1200px) {
     .grid-container-3 {
       grid-template-columns: 15% 40% 30% 15%;
+      grid-template-rows: 15% 70% 15%;
       grid-template-areas: 
         "header header header header"
         "..... content sidebar ....."
