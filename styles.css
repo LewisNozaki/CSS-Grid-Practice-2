@@ -78,9 +78,10 @@ a:hover {
     /* Grid Template Areas */
     /* The height of the rows will fit the content of the element */
     /* Placing a "." inside the template area will define that section to be a blank space */
+    grid-template-columns: minmax(20px, 10em) 20em 10em;
     grid-template-areas: 
       "header header header"
-      "sidebar content content"
+      "sidebar content ."
       "footer footer footer"
       ". something .";
   }
@@ -138,7 +139,7 @@ a:hover {
       "footer footer footer";
     height: calc(100% - 191px);
   }
-  
+
   .grid-item3 {
     background: aquamarine;
     font-size: 2em;
